@@ -213,9 +213,9 @@ namespace ComputerVisionTest
 
 READ FILE FROM URL
 
-Extracting text from URL file example.png...
+Extracting text from URL file notes1.jpg...
 
-Hello, this is a sample text extracted from an image.
+![Alt text](https://raw.githubusercontent.com/nilayarangil/AzureComputerVisionTests/refs/heads/master/images/output.jpg)
 
 ## **License**
 
