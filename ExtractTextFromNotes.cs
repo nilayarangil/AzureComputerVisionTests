@@ -11,7 +11,6 @@ using System.Linq;
 
 namespace ComputerVisionTest
 {
-    
     public class ExtractTextFromNotes
     {        
         public static async Task ReadFileUrl(string urlFile, string Key, string endPoint)
