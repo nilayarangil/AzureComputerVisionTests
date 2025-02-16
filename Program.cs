@@ -1,8 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ComputerVisionTest;
 
-Console.WriteLine("Hello, World!");
-string subkey = "computer vision instance key";
+string subkey = "yourkey";
 string endpnt = "https://nilayazurecompvisioninstance.cognitiveservices.azure.com/";
 ImageAnalyser IA = new ImageAnalyser(subkey, endpnt);
 
@@ -16,6 +15,6 @@ if (string.IsNullOrWhiteSpace(imagePath)) return;
 List<string> detectedItems = IA.DetectItemsAsync(imagePath).Result;
 
 IEnumerable<string> itemsToMention = detectedItems.Distinct().Take(5);
-string message = $"Nothing to bark at, but here's some things I saw: {string.Join(", ", itemsToMention)}";
+string message = $"Summary: {string.Join(", ", itemsToMention)}";
 Console.WriteLine(message);
 
